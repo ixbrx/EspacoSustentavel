@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compensação de Emissões Espaciais</title>
+    <link rel="stylesheet" href="projetos.css">
+</head>
+<body>
+    <header>
+        <img src="assets/logo.png" alt="logo" id="logo">
+        <button id="menu-toggle">Menu</button>
+    </header>
+
+    <nav id="navbar" class="hidden">
+        <ul>
+            <li><a href="main.html">Início</a></li>
+            <li><a href="#">Sobre o Projeto</a></li>
+            <li><a href="calculadora.html">Calculadora</a></li>
+            <li><a href="projetos.html">Projetos de Compensação</a></li>
+            <li><a href="escolha.html">Escolha uma compensação</a></li>
+            <li><a href="historia.html">Emissões de Foguetes Históricos</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+
+<section class="banner-compensacao">
+    <h2>Compensação de Emissões Espaciais</h2>
+    <p>Descubra como as indústrias espaciais estão inovando para neutralizar suas emissões de carbono e proteger nosso planeta.</p>
+</section>
+
+<section class="compensacao-info">
+    <div class="card" data-info="reflorestamento">
+        <img src="assets/reflorestamento-icon.png" alt="Reflorestamento e Agroflorestas">
+        <h3>Reflorestamento e Agroflorestas</h3>
+        <p>Projetos que plantam árvores em áreas desmatadas ou promovem práticas agrícolas sustentáveis.</p>
+        <span>Impacto: Absorção de CO2 da atmosfera e recuperação de ecossistemas.</span>
+    </div>
+
+    <div class="card" data-info="ccs">
+        <img src="assets/ccs-icon.png" alt="Captura de Carbono e Armazenamento (CCS)">
+        <h3>Captura de Carbono e Armazenamento</h3>
+        <p>Desenvolvimento de tecnologias que capturam CO2 das emissões e armazenam-no em locais subterrâneos.</p>
+        <span>Impacto: Redução das emissões globais com potencial aplicação em lançamentos espaciais.</span>
+    </div>
+
+    <div class="card" data-info="energia-renovavel">
+        <img src="assets/energia-renovavel-icon.png" alt="Energia Renovável">
+        <h3>Energia Renovável</h3>
+        <p>Investimento em energia solar, eólica ou hidroelétrica para alimentar instalações espaciais.</p>
+        <span>Impacto: Redução da dependência de combustíveis fósseis e pegada de carbono.</span>
+    </div>
+
+    <div class="card" data-info="compensacao-lancamentos">
+        <img src="assets/compensacao-icon.png" alt="Compensação de Emissões de Lançamentos">
+        <h3>Compensação de Emissões de Lançamentos</h3>
+        <p>Parcerias com iniciativas que investem em projetos de energia limpa ou reflorestamento.</p>
+        <span>Impacto: Neutralização das emissões geradas durante lançamentos espaciais.</span>
+    </div>
+
+    <div class="card" data-info="tecnologias-sustentaveis">
+        <img src="assets/lancamento-sustentavel-icon.png" alt="Tecnologias de Lançamento Sustentável">
+        <h3>Tecnologias de Lançamento Sustentável</h3>
+        <p>Foguetes que utilizam combustíveis menos poluentes ou sistemas de propulsão alternativos.</p>
+        <span>Impacto: Redução direta das emissões do transporte espacial.</span>
+    </div>
+
+    <div class="card" data-info="monitoramento">
+        <img src="assets/monitoramento-icon.png" alt="Iniciativas de Monitoramento Ambiental">
+        <h3>Iniciativas de Monitoramento Ambiental</h3>
+        <p>Uso de satélites para monitorar e relatar as emissões de carbono em tempo real.</p>
+        <span>Impacto: Suporte a políticas de redução de emissões.</span>
+    </div>
+</section>
+
+<div class="modal hidden">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3 id="modal-title"></h3>
+        <p id="modal-description"></p>
+    </div>
+</div>
+
+<script src="projetos.js"></script>

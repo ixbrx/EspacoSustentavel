@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compensação de Emissões Espaciais</title>
+    <link rel="stylesheet" href="escolha.css">
+</head>
+<body>
+    <header>
+        <img src="assets/logo.png" alt="logo" id="logo">
+        <button id="menu-toggle">Menu</button>
+    </header>
+
+    <nav id="navbar" class="hidden">
+        <ul>
+            <li><a href="main.html">Início</a></li>
+            <li><a href="#">Sobre o Projeto</a></li>
+            <li><a href="calculadora.html">Calculadora</a></li>
+            <li><a href="projetos.html">Projetos de Compensação</a></li>
+            <li><a href="escolha.html">Escolha uma compensação</a></li>
+            <li><a href="historia.html">Emissões de Foguetes Históricos</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+
+    <section id="credito-input">
+        <h2>Digite seus Créditos de Carbono</h2>
+        <input type="number" id="credito-quantidade" placeholder="Quantidade de Créditos" min="0" />
+        <button id="calcular-compensacao">Calcular Compensação</button>
+    </section>
+    
+    <section id="opcoes-compensacao" class="hidden">
+        <h3>Escolha uma Compensação</h3>
+        <div class="compensacao-opcao" data-custo="10">
+            <h4>Reflorestamento e Agroflorestas</h4>
+            <p>Custo: 10 Créditos de Carbono</p>
+            <button class="selecionar">Selecionar</button>
+        </div>
+        <div class="compensacao-opcao" data-custo="15">
+            <h4>Captura de Carbono e Armazenamento (CCS)</h4>
+            <p>Custo: 15 Créditos de Carbono</p>
+            <button class="selecionar">Selecionar</button>
+        </div>
+        <div class="compensacao-opcao" data-custo="8">
+            <h4>Energia Renovável</h4>
+            <p>Custo: 8 Créditos de Carbono</p>
+            <button class="selecionar">Selecionar</button>
+        </div>
+        <div class="compensacao-opcao" data-custo="12">
+            <h4>Compensação de Emissões de Lançamentos</h4>
+            <p>Custo: 12 Créditos de Carbono</p>
+            <button class="selecionar">Selecionar</button>
+        </div>
+        <div class="compensacao-opcao" data-custo="20">
+            <h4>Tecnologias de Lançamento Sustentável</h4>
+            <p>Custo: 20 Créditos de Carbono</p>
+            <button class="selecionar">Selecionar</button>
+        </div>
+        <div class="compensacao-opcao" data-custo="5">
+            <h4>Iniciativas de Monitoramento Ambiental</h4>
+            <p>Custo: 5 Créditos de Carbono</p>
+            <button class="selecionar">Selecionar</button>
+        </div>
+    </section>
+    
+    <div class="modal hidden">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3 id="modal-title"></h3>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+    
+    <script src="escolha.js"></script>
+</body>
+</html>

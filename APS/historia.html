@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emissões de Foguetes Históricos</title>
+    <link rel="stylesheet" href="historia.css"> <!-- Vincular o mesmo CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+    <header>
+        <img src="assets/logo.png" alt="logo" id="logo">
+        <button id="menu-toggle">Menu</button> <!-- Botão para abrir/fechar o menu -->
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="main.html">Início</a></li>
+            <li><a href="#">Sobre o Projeto</a></li>
+            <li><a href="calculadora.html">Calculadora</a></li>
+            <li><a href="projetos.html">Projetos de Compensação</a></li>
+            <li><a href="escolha.html">Escolha uma compensação</a></li>
+            <li><a href="historia.html">Emissões de Foguetes Históricos</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+
+    <section class="banner">
+        <h2>Emissões de Foguetes Históricos</h2>
+    </section>
+
+    <section class="conteudo">
+        <h1>Emissões e Pegada de Carbono de Foguetes Históricos</h1>
+        <div class="interface">
+            <h2 class="titulo">FOGUETES <span>DA HISTORIA</span></h2>
+            <div class="flex" id="acoes">
+
+                <div class="img-port" style="background-image:url(assets/saturnov.jpg);">
+                    <div class="overlay">SATURNO V</div>
+                </div>
+
+                <div class="img-port" style="background-image:url(assets/onibus.jpg);">
+                    <div class="overlay">ÔNIBUS ESPACIAL</div>
+                </div>
+                <div class="img-port" style="background-image:url(assets/falcon.jpg);">
+                    <div class="overlay">FALCON 9</div>
+                </div>
+            </div>
+        </div>
+
+        <h2>Análise Comparativa</h2>
+        <p>Veja abaixo os gráficos que comparam as emissões de CO₂ dos foguetes ao longo do tempo:</p>
+
+        <!-- Gráfico interativo pode ser adicionado aqui -->
+        <canvas id="graficoFoguetes" width="400" height="200"></canvas>
+<canvas id="graficoEmissoes" width="400" height="200"></canvas>
+
+    </section>
+
+    <footer>
+        <p>© 2024 Espaço Sustentável. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="historia.js"></script> <!-- Vincular o arquivo JS se houver -->
+    
+</body>
+</html>

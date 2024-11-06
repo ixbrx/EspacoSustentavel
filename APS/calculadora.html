@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Emissões de Carbono</title>
+    <!-- Link para o arquivo CSS -->
+    <link rel="stylesheet" href="/APS/assets/calc.css">
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+    <header>
+        <img src="/APS/assets/logo.png" alt="logo" id="logo">
+        <button id="menu-toggle">Menu</button>
+    </header>
+
+    <nav id="navbar" class="hidden">
+        <ul>
+            <li><a href="main.html">Início</a></li>
+            <li><a href="#">Sobre o Projeto</a></li>
+            <li><a href="calculadora.html">Calculadora</a></li>
+            <li><a href="projetos.html">Projetos de Compensação</a></li>
+            <li><a href="escolha.html">Escolha uma compensação</a></li>
+            <li><a href="historia.html">Emissões de Foguetes Históricos</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+
+    <section class="calculadora">
+        <h1>Calculadora de Emissões de Carbono para Foguetes</h1>
+        <form id="calculadora-form">
+            <label for="combustivel">Selecione o tipo de combustível:</label>
+            <select id="combustivel" name="combustivel">
+                <option value="RP-1">RP-1</option>
+                <option value="Hidrogênio Líquido">Hidrogênio Líquido</option>
+                <option value="Metano">Metano</option>
+                <option value="Combustível Sólido">Combustível Sólido</option>
+            </select>
+
+            <label for="quantidade">Quantidade de combustível (toneladas):</label>
+            <input type="number" id="quantidade" name="quantidade" required>
+
+            <label for="lancamentos">Número de lançamentos:</label>
+            <input type="number" id="lancamentos" name="lancamentos" required>
+
+            <button type="submit">Calcular Emissões</button>
+        </form>
+
+        <div id="resultado" style="display: none;">
+            <h2>Resultado:</h2>
+            <p id="emissoes"></p>
+            <p id="creditos"></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Espaço Sustentável. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Link para o arquivo JS -->
+    <script src="/APS/assets/calc.js"></script>
+</body>
+</html>
